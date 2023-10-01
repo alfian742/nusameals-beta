@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <!-- Color modes -->
+    <script src="assets/js/color-modes.js"></script>
+
+    <!-- Meta tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alfian Hidayat">
+    <meta name="description" content="Welcome to NusaMeals">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/other/nusameals.png" sizes="180x180">
+    <link rel="icon" href="assets/img/other/nusameals.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/other/nusameals.png" sizes="16x16" type="image/png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="assets/fontawesome-icons/css/all.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>NusaMeals</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="customNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#">
+                <img src="assets/img/other/nusameals.png" alt="NusaMeals" width="28" height="28"
+                    class="d-inline-block align-text-top rounded-1">
+                NusaMeals
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium active" href="#heroSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#serviceSection">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#menuSection">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#contactSection">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-outline-light rounded-pill fw-medium d-none d-lg-inline">Get
+                    the App</a>
+                <a href="#" class="btn btn-outline-light rounded-pill fw-medium d-lg-none w-100">Get the
+                    App</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Hero Section -->
+    <section id="heroSection">
+        <div class="hero-background"></div>
+        <div class="container px-4">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-6 col-sm-6 order-items-1">
+                    <div class="d-none d-lg-block mb-5">
+                        <h3 class="fw-medium text-light">Discover the Rich Culinary</h3>
+                        <h1 class="fw-semibold text-light">Heritage of Indonesia</h1>
+                        <h5 class="fw-normal text-light">No more long lines, our app makes booking and ordering with us
+                            the smart
+                            way
+                            to dine.
+                        </h5>
+                    </div>
+                    <div class="d-lg-none mb-4">
+                        <h3 class="fw-medium">Discover the Rich Culinary</h3>
+                        <h1 class="fw-semibold">Heritage of Indonesia</h1>
+                        <h5 class="fw-normal">No more long lines, our app makes booking and ordering with us the smart
+                            way
+                            to dine.
+                        </h5>
+                    </div>
+                    <a href="#" class="btn btn-lg btn-primary rounded-pill mb-4">Get the App</a>
+                    <div class="d-flex gap-4">
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 fs-4"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 fs-4"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 fs-4"><i
+                                class="fa-brands fa-threads"></i></a>
+                        <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 fs-4"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-6 col-sm-6 order-items-2">
+                    <img src="assets/img/other/nusantara-food.png" alt="Nusantara Foods"
+                        class="h-100 w-100 d-inline-block mx-auto my-5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of hero section -->
+
+    <!-- Service section -->
+    <section id="serviceSection">
+        <div class="container px-4">
+            <!-- Top Service -->
+            <div id="carouselService" class="carousel slide d-lg-none mb-5">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselService" data-bs-slide-to="0"
+                        class="bg-primary active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselService" data-bs-slide-to="1" class="bg-primary"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselService" data-bs-slide-to="2" class="bg-primary"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block p-5">
+                            <div class="card border-0 h-100 w-100 text-center">
+                                <div class="card-body">
+                                    <div class="mx-auto fs-1"><i class="fa-solid fa-mobile-screen"></i></div>
+                                    <h3 class="card-title fw-bold my-3">Easy To Order</h3>
+                                    <p class="card-text fw-medium">The convinience of ordering food only with the
+                                        application
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block p-5">
+                            <div class="card border-0 h-100 w-100 text-center">
+                                <div class="card-body">
+                                    <div class="mx-auto fs-1"><i class="fa-regular fa-star"></i></div>
+                                    <h3 class="card-title fw-bold my-3">Best Quality</h3>
+                                    <p class="card-text fw-medium">The whole meals has guaranteed quality
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block p-5">
+                            <div class="card border-0 h-100 w-100 text-center">
+                                <div class="card-body">
+                                    <div class="mx-auto fs-1"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                    <h3 class="card-title fw-bold my-3">Affordable Prices</h3>
+                                    <p class="card-text fw-medium">Stay thrifty while eating well
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselService"
+                    data-bs-slide="prev">
+                    <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselService"
+                    data-bs-slide="next">
+                    <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="d-none d-lg-block mb-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-0 h-100 w-100 text-center">
+                            <div class="card-body">
+                                <div class="mx-auto fs-1"><i class="fa-solid fa-mobile-screen"></i></div>
+                                <h3 class="card-title fw-bold my-3">Easy To Order</h3>
+                                <p class="card-text fw-medium">The convinience of ordering food only with the
+                                    application
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 h-100 w-100 text-center">
+                            <div class="card-body">
+                                <div class="mx-auto fs-1"><i class="fa-regular fa-star"></i></div>
+                                <h3 class="card-title fw-bold my-3">Best Quality</h3>
+                                <p class="card-text fw-medium">The whole meals has guaranteed quality
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 h-100 w-100 text-center">
+                            <div class="card-body">
+                                <div class="mx-auto fs-1"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                <h3 class="card-title fw-bold my-3">Affordable Prices</h3>
+                                <p class="card-text fw-medium">Stay thrifty while eating well
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of top service -->
+
+            <!-- Bottom service -->
+            <div class="row mb-5">
+                <div class="col">
+                    <h2 class="text-center fw-semibold">Our Special Servvice</h2>
+                    <h2 class="text-center fw-semibold">form Nusantara Meals</h2>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 w-100 shadow-sm rounded-4 bg-primary-subtle">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold d-flex align-items-center gap-3">
+                                <span class="fs-1"><i class="fa-solid fa-qrcode"></i></span>
+                                <span>QR Code Scan on Table</span>
+                            </h5>
+                            <p class="card-text fw-medium">Easily scan food and drinks via QR Code directly
+                                at the table
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 w-100 shadow-sm rounded-4 bg-primary-subtle">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold d-flex align-items-center gap-3">
+                                <span class="fs-1"><i class="fa-solid fa-book"></i></span>
+                                <span>Book Your Seat</span>
+                            </h5>
+                            <p class="card-text fw-medium">Reserve your seat in advance, and you will sit
+                                compfortably and peacefully
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 w-100 shadow-sm rounded-4 bg-primary-subtle">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold d-flex align-items-center gap-3">
+                                <span class="fs-1"><i class="fa-solid fa-users"></i></span>
+                                <span>Short and Efficient Queue</span>
+                            </h5>
+                            <p class="card-text fw-medium">Doesn't make you queue long when placing an order
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of bottom service -->
+        </div>
+    </section>
+    <!-- End of service section -->
+
+    <!-- Menus section -->
+    <section id="menuSection">
+        <div class="container px-4">
+            <div class="card border-0 bg-primary-subtle h-100 w-100 rounded-4 p-2 mb-5">
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <h2 class="fw-semibold text-center">This Mounth Hottest Menu</h2>
+                            <h4 class="fw-medium text-center">the best of Indonesia's culinary treasures, all in one
+                                place</h4>
+                        </div>
+                    </div>
+
+                    <!-- Nav menus -->
+                    <ul class="nav nav-pills justify-content-center border-0 mb-4" id="menuTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-start-pill border border-primary active"
+                                id="tabMenusFood-tab" data-bs-toggle="tab" data-bs-target="#tabMenusFood" type="button"
+                                role="tab" aria-controls="tabMenusFood" aria-selected="true">
+                                <span class="d-flex gap-2 align-items-center"><i
+                                        class="fa-solid fa-bowl-food"></i>Foods</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-end-pill border border-primary" id="tabMenusDrink-tab"
+                                data-bs-toggle="tab" data-bs-target="#tabMenusDrink" type="button" role="tab"
+                                aria-controls="tabMenusDrink" aria-selected="false">
+                                <span class="d-flex gap-2 align-items-center">Drinks<i
+                                        class="fa-solid fa-mug-saucer"></i></span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- End nav menus -->
+
+                    <!-- Menus content -->
+                    <div class="tab-content" id="menuTabsContent">
+                        <!-- Tabs Food -->
+                        <div class="tab-pane fade show active" id="tabMenusFood" role="tabpanel"
+                            aria-labelledby="tabMenusFood-tab">
+                            <!-- Carousel food -->
+                            <div id="carouselFood" class="carousel slide d-lg-none mb-5">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="0"
+                                        class="bg-primary active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="1"
+                                        class="bg-primary" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="2"
+                                        class="bg-primary" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselFood" data-bs-slide-to="3"
+                                        class="bg-primary" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <!-- Code in script.js -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFood"
+                                    data-bs-slide="prev">
+                                    <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselFood"
+                                    data-bs-slide="next">
+                                    <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- End of carousel food -->
+
+                            <!-- Food card -->
+                            <div class="d-none d-lg-block mb-5" id="cardFood">
+                                <div class="row">
+                                    <!-- Code in script.js -->
+                                </div>
+                            </div>
+                            <!-- End of food card -->
+                        </div>
+                        <!-- End tabs food -->
+
+                        <!-- Tabs Drink -->
+                        <div class="tab-pane fade show" id="tabMenusDrink" role="tabpanel"
+                            aria-labelledby="tabMenusDrink-tab">
+                            <!-- Carousel drink -->
+                            <div id="carouselDrink" class="carousel slide d-lg-none mb-5">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselDrink" data-bs-slide-to="0"
+                                        class="bg-primary active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselDrink" data-bs-slide-to="1"
+                                        class="bg-primary" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselDrink" data-bs-slide-to="2"
+                                        class="bg-primary" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselDrink" data-bs-slide-to="3"
+                                        class="bg-primary" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <!-- Code in script.js -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDrink"
+                                    data-bs-slide="prev">
+                                    <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselDrink"
+                                    data-bs-slide="next">
+                                    <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- End of carousel drink -->
+
+                            <!-- Drink card -->
+                            <div class="d-none d-lg-block mb-5" id="cardDrink">
+                                <div class="row">
+                                    <!-- Code in script.js -->
+                                </div>
+                            </div>
+                            <!-- End of drink card -->
+                        </div>
+                        <!-- End tabs drink -->
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-sm btn-primary rounded-pill" href="#">See more menus</a>
+                    </div>
+                    <!-- End of menus content -->
+                </div>
+            </div>
+    </section>
+    <!-- End of menus section -->
+
+    <!-- Customer section -->
+    <div class="container px-4">
+        <h2 class="text-center fw-semibold">Our Customer Feedback</h2>
+
+        <div id="carouselCustomer" class="carousel slide d-lg-none mb-5">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCustomer" data-bs-slide-to="0" class="bg-primary active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCustomer" data-bs-slide-to="1" class="bg-primary"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCustomer" data-bs-slide-to="2" class="bg-primary"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block p-5 mx-2">
+                        <div class="card border-0 h-100 w-100 shadow-sm rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center gap-3 mb-3">
+                                    <img class="rounded-circle object-fit-cover shadow-sm"
+                                        src="assets/img/other/costomer-1.png" alt="Customer" height="40" width="40">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-title fw-medium">Steven Smith</h5>
+                                        <h6 class="card-subtitle text-warning fw-normal">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <p class="card-text">The taste of the food here is amazing, with the spices seeping
+                                    into the meat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block p-5 mx-2">
+                        <div class="card border-0 h-100 w-100 shadow-sm rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center gap-3 mb-3">
+                                    <img class="rounded-circle object-fit-cover shadow-sm"
+                                        src="assets/img/other/costomer-2.png" alt="Customer" height="40" width="40">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-title fw-medium">Esther Howard</h5>
+                                        <h6 class="card-subtitle text-warning fw-normal">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <p class="card-text">It's really crazy that the food here is really delicious, until
+                                    all the spices seep into the meat. Especially you have to try
+                                    the rendang! Crazy!!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block p-5 mx-2">
+                        <div class="card border-0 h-100 w-100 shadow-sm rounded-4">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center gap-3 mb-3">
+                                    <img class="rounded-circle object-fit-cover shadow-sm"
+                                        src="assets/img/other/costomer-3.png" alt="Customer" height="40" width="40">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="card-title fw-medium">Edward Jacob</h5>
+                                        <h6 class="card-subtitle text-warning fw-normal">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <p class="card-text">Wow, the food here is simply amazing! I can feel how delicious
+                                    the spices seep into the meat, you can't miss it
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCustomer" data-bs-slide="prev">
+                <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                    <i class="fa-solid fa-angle-left"></i>
+                </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCustomer" data-bs-slide="next">
+                <span class="custom-carousel-icon bg-primary" aria-hidden="true">
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="d-none d-lg-block my-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 w-100 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-row align-items-center gap-3 mb-3">
+                                <img class="rounded-circle object-fit-cover shadow-sm"
+                                    src="assets/img/other/costomer-1.png" alt="Customer" height="40" width="40">
+                                <div class="d-flex flex-column">
+                                    <h5 class="card-title fw-medium">Steven Smith</h5>
+                                    <h6 class="card-subtitle text-warning fw-normal">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="card-text">The taste of the food here is amazing, with the spices seeping
+                                into the meat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 w-100 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-row align-items-center gap-3 mb-3">
+                                <img class="rounded-circle object-fit-cover shadow-sm"
+                                    src="assets/img/other/costomer-2.png" alt="Customer" height="40" width="40">
+                                <div class="d-flex flex-column">
+                                    <h5 class="card-title fw-medium">Esther Howard</h5>
+                                    <h6 class="card-subtitle text-warning fw-normal">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="card-text">It's really crazy that the food here is really delicious, until
+                                all the spices seep into the meat. Especially you have to try
+                                the rendang! Crazy!!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 w-100 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <div class="d-flex flex-row align-items-center gap-3 mb-3">
+                                <img class="rounded-circle object-fit-cover shadow-sm"
+                                    src="assets/img/other/costomer-3.png" alt="Customer" height="40" width="40">
+                                <div class="d-flex flex-column">
+                                    <h5 class="card-title fw-medium">Edward Jacob</h5>
+                                    <h6 class="card-subtitle text-warning fw-normal">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                            <p class="card-text">Wow, the food here is simply amazing! I can feel how delicious
+                                the spices seep into the meat, you can't miss it
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-bg-dark border-0 rounded-4 mb-5 w-100 h-100">
+            <img src="assets/img/other/bg-subscribe.png" class="card-img rounded-4 object-fit-cover custom-card-img"
+                alt="Nusantara Foods">
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                <h2 class="card-title fw-semibold">Get more updates of Nusantara Foods</h2>
+                <h4 class="card-subtitle fw-normal mb-5">never miss out on the taste of Indonesia - Subscribe
+                    for exclusive updates</h4>
+                <form action="" method="POST" class="w-100 d-lg-none">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control rounded-start-pill" placeholder="Your mail..." required>
+                        <button class="btn btn-primary rounded-end-pill" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                <form action="" method="POST" class="w-50 d-none d-lg-block">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control rounded-start-pill" placeholder="Your mail..." required>
+                        <button class="btn btn-primary rounded-end-pill" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End of customer section -->
+
+    <!-- Contact section -->
+    <section id="contactSection" class="bg-primary text-light rounded-top-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/img/other/nusameals.png" alt="NusaMeals" width="64" height="64" class="mb-2" />
+                    <p class="fw-medium mb-4">Experience the best of Nusantara cuisine at your fingertips.</p>
+
+                    <h3 class="fw-semibold mb-3">Contact us</h3>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+62 81-2345-6789</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>halo@nusameal.com </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="#"><img src="assets/img/other/google-play.svg" alt="Play Store" class="mb-3" /></a>
+
+                    <div class="d-flex flex-row gap-5">
+                        <div class="d-flex flex-column">
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#heroSection">Home</a>
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#serviceSection">Service</a>
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#menuSection">Menu</a>
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#contactSection">Contact</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#termsAndConditions">Terms and Conditions</a>
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#support">Support</a>
+                            <a class="link-light link-underline link-underline-opacity-0 mb-3"
+                                href="#privacyPolicy">Privacy
+                                Policy</a>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="link-light link-underline link-underline-opacity-0 mb-3">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="#" class="link-light link-underline link-underline-opacity-0 mb-3">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="link-light link-underline link-underline-opacity-0 mb-3">
+                                    <i class="fa-brands fa-threads"></i>
+                                </a>
+                                <a href="#" class="link-light link-underline link-underline-opacity-0 mb-3">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End contact section -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-light" id="footer">
+        <div class="container px-4 py-3 border-top border-light text-center fw-medium">
+            &copy; <span id="currentYear"></span> NusaMeals. All rights reserved.
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Screen mode properties -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- End of toggle screen mode -->
+
+    <!-- Bootstrap js bundle with @popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
