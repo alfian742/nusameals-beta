@@ -47,10 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateNavbar();
 });
 
-// Tooltips
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
 // Dataset
 const foodData = [
     {
@@ -157,7 +153,7 @@ function createCardAndModal(data, idPrefix, increment) {
     const cardDiv = document.createElement('div');
     cardDiv.classList.add('col-md-3');
     cardDiv.innerHTML = `
-        <div class="card border-0 w-100 h-100 shadow-sm rounded-4 pointer" id="${idPrefix}${increment}" data-bs-toggle="tooltip" data-bs-title="Click to see details of ${data.name}">
+        <div class="card border-0 w-100 h-100 shadow-sm rounded-4 pointer" id="${idPrefix}${increment}" data-bs-toggle="tooltip" data-bs-title="Click to see details of ${data.name}" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="50">
             <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="200">
             <div class="card-body">
                 <h5 class="card-title fw-semibold mb-3">${data.name}</h5>
@@ -286,6 +282,24 @@ for (let i = 0; i < drinkData.length; i++) {
         modal.show();
     });
 }
+
+// Tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// AOS
+function checkScreenWidth() {
+    if (window.innerWidth < 768) {
+        AOS.init({
+            disable: true
+        });
+    } else {
+        AOS.init();
+    }
+}
+
+window.addEventListener('load', checkScreenWidth);
+window.addEventListener('resize', checkScreenWidth);
 
 // Mendapatkan Tahun
 var currentYear = new Date().getFullYear();
