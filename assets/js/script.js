@@ -52,77 +52,78 @@ const foodData = [
     {
         name: 'Iga Bakar',
         city: 'Surabaya',
-        price: 'Rp 35,000',
-        calories: '450 kkal',
+        price: 'IDR 35,000',
+        calories: '450 kcal',
         imageUrl: 'assets/img/food/iga-bakar.jpg',
-        desc: 'Iga bakar adalah hidangan khas Jawa Timur yang lezat dan gurih. Dibakar dengan bumbu rempah pilihan, iga ini pasti memanjakan lidah Anda.',
-        ingredients: 'Iga sapi, bumbu rempah, kecap, bawang merah, bawang putih, garam'
+        desc: 'Iga bakar is a delicious and savory dish typical of East Java. Grilled with selected spices, these ribs will surely delight your taste buds.',
+        ingredients: 'Beef ribs, spices, soy sauce, shallots, garlic, salt.'
     },
     {
         name: 'Sate Kambing',
         city: 'Malang',
-        price: 'Rp 25,000',
-        calories: '380 kkal',
+        price: 'IDR 25,000',
+        calories: '380 kcal',
         imageUrl: 'assets/img/food/sate-kambing.jpg',
-        desc: 'Sate kambing adalah hidangan yang populer di Jawa Timur. Daging kambing yang empuk dipanggang dengan bumbu kacang yang lezat.',
-        ingredients: 'Daging kambing, bumbu kacang, bawang merah, bawang putih, kecap manis'
+        desc: 'Sate kambing is a popular dish in East Java. Tender goat meat is grilled with tasty peanut sauce.',
+        ingredients: 'Goat meat, peanut sauce, shallots, garlic, sweet soy sauce.'
     },
     {
         name: 'Sate Maranggi',
         city: 'Cirebon',
-        price: 'Rp 40,000',
-        calories: '500 kkal',
+        price: 'IDR 40,000',
+        calories: '500 kcal',
         imageUrl: 'assets/img/food/sate-maranggi.jpg',
-        desc: 'Sate Maranggi adalah hidangan khas Cirebon yang terkenal karena bumbu pedas dan cita rasanya yang unik.',
-        ingredients: 'Daging sapi, bumbu maranggi, cabai merah, cabai hijau, bawang putih'
+        desc: 'Sate Maranggi is a famous dish from Cirebon known for its spicy seasonings and unique taste.',
+        ingredients: 'Beef, maranggi seasoning, red chili, green chili, garlic.'
     },
     {
         name: 'Empal Gentong',
         city: 'Cirebon',
-        price: 'Rp 28,000',
-        calories: '360 kkal',
+        price: 'IDR 28,000',
+        calories: '360 kcal',
         imageUrl: 'assets/img/food/empal-gentong.jpg',
-        desc: 'Empal Gentong adalah sup daging sapi yang kaya rempah dan bumbu tradisional dari Cirebon.',
-        ingredients: 'Daging sapi, santan, serai, daun salam, bumbu rempah'
+        desc: 'Empal Gentong is a richly spiced beef soup with traditional seasonings from Cirebon.',
+        ingredients: 'Beef, coconut milk, lemongrass, bay leaves, spices.'
     },
 ];
+
 
 const drinkData = [
     {
         name: 'Wedang Jahe Merah',
         city: 'Yogyakarta',
-        price: 'Rp 15,000',
-        calories: '90 kkal',
+        price: 'IDR 15,000',
+        calories: '90 kcal',
         imageUrl: 'assets/img/drink/wedang-jahe-merah.jpg',
-        desc: 'Wedang Jahe Merah adalah minuman tradisional Indonesia yang hangat dan menyegarkan, terbuat dari jahe merah, gula merah, dan rempah-rempah pilihan.',
-        ingredients: 'Jahe merah, gula merah, daun pandan, cengkeh'
+        desc: 'Wedang Jahe Merah is a traditional Indonesian beverage that is warm and refreshing, made from red ginger, brown sugar, and selected spices.',
+        ingredients: 'Red ginger, brown sugar, pandan leaves, cloves.'
     },
     {
         name: 'Es Lemon Tea',
         city: 'Jakarta',
-        price: 'Rp 20,000',
-        calories: '120 kkal',
+        price: 'IDR 20,000',
+        calories: '120 kcal',
         imageUrl: 'assets/img/drink/es-lemon-tea.jpg',
-        desc: 'Es Lemon Tea adalah minuman segar yang terbuat dari teh hitam dengan tambahan perasan lemon dan es batu. Sangat cocok untuk cuaca panas.',
-        ingredients: 'Teh hitam, lemon, gula, es batu'
+        desc: 'Es Lemon Tea is a refreshing drink made from black tea with added lemon juice and ice cubes. Perfect for hot weather.',
+        ingredients: 'Black tea, lemon, sugar, ice cubes.'
     },
     {
         name: 'Es Cincau',
         city: 'Bandung',
-        price: 'Rp 10,000',
-        calories: '70 kkal',
+        price: 'IDR 10,000',
+        calories: '70 kcal',
         imageUrl: 'assets/img/drink/es-cincau.jpg',
-        desc: 'Es Cincau adalah minuman manis yang terbuat dari agar-agar cincau yang kenyal, disajikan dengan santan dan gula merah cair.',
-        ingredients: 'Agar-agar cincau, santan, gula merah cair'
+        desc: 'Es Cincau is a sweet beverage made from chewy cincau agar-agar, served with coconut milk and brown sugar syrup.',
+        ingredients: 'Cincau agar-agar, coconut milk, brown sugar syrup.'
     },
     {
         name: 'Jus Mangga',
         city: 'Surabaya',
-        price: 'Rp 18,000',
-        calories: '150 kkal',
+        price: 'IDR 18,000',
+        calories: '150 kcal',
         imageUrl: 'assets/img/drink/jus-mangga.jpg',
-        desc: 'Jus Mangga adalah minuman segar yang terbuat dari buah mangga segar yang di-blend hingga halus. Nikmati rasa manis mangga dalam setiap tegukan.',
-        ingredients: 'Buah mangga, air, gula'
+        desc: 'Jus Mangga is a refreshing drink made from fresh mangoes blended to smooth perfection. Enjoy the sweet taste of mango in every sip.',
+        ingredients: 'Mango, water, sugar.'
     },
 ];
 
@@ -172,7 +173,7 @@ function createCardAndModal(data, idPrefix, increment) {
                     <div class="modal-body position-relative p-0">
                         <button type="button" class="btn btn-danger position-absolute top-0 end-0 z-3 rounded-4 rounded-top-0 rounded-end-0" data-bs-dismiss="modal"><i class="fa-solid fa-x"></i></button>
                         <div class="card border-0 w-100 h-100 shadow-sm rounded-4">
-                            <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="200">
+                            <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="240">
                             <div class="card-body">
                                 <h5 class="card-title fw-semibold mb-3">${data.name}</h5>
                                 <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
@@ -192,7 +193,7 @@ function createCardAndModal(data, idPrefix, increment) {
                     </div>
                     <div class="modal-footer justify-content-between">
                         <p class="fw-semibold fs-5">${data.price}</p>
-                        <a class="btn btn-primary rounded-pill" href="#">Order in App</a>
+                        <a class="btn btn-primary rounded-pill" href="https://play.google.com">Order in App</a>
                     </div>
                 </div>
             </div>
@@ -207,7 +208,7 @@ function createCarouselAndModal(data, idPrefix, increment) {
     carouselDiv.innerHTML = `
         <div class="d-block p-5 mx-2">
             <div class="card border-0 w-100 h-100 shadow-sm rounded-4 pointer" id="${idPrefix}${increment}" data-bs-toggle="tooltip" data-bs-title="Click to see details of ${data.name}">
-                <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="100">
+                <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="150">
                 <div class="card-body">
                     <h5 class="card-title fw-semibold mb-3">${data.name}</h5>
                     <p class="card-text fw-normal mb-3">${data.city}</p>
@@ -226,7 +227,7 @@ function createCarouselAndModal(data, idPrefix, increment) {
                     <div class="modal-body position-relative p-0">
                         <button type="button" class="btn btn-danger position-absolute top-0 end-0 z-3 rounded-4 rounded-top-0 rounded-end-0" data-bs-dismiss="modal"><i class="fa-solid fa-x"></i></button>
                         <div class="card border-0 w-100 h-100 shadow-sm rounded-4">
-                            <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="200">
+                            <img src="${data.imageUrl}" class="card-img-top object-fit-cover rounded-top-4" alt="${data.name}" height="300">
                             <div class="card-body">
                                 <h5 class="card-title fw-semibold mb-3">${data.name}</h5>
                                 <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
@@ -246,7 +247,7 @@ function createCarouselAndModal(data, idPrefix, increment) {
                     </div>
                     <div class="modal-footer justify-content-between">
                         <p class="fw-semibold fs-5">${data.price}</p>
-                        <a class="btn btn-primary rounded-pill" href="#">Order in App</a>
+                        <a class="btn btn-primary rounded-pill" href="https://play.google.com">Order in App</a>
                     </div>
                 </div>
             </div>
