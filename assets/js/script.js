@@ -1,10 +1,30 @@
 // Custom navbar
 document.addEventListener('DOMContentLoaded', function () {
+    const customNavbar = document.querySelector('#customNavbar');
     const navbarLinks = document.querySelectorAll('#customNavbar .nav-link');
     const sections = document.querySelectorAll('section');
     const offset = 84;
+    const ctaNavbar = document.querySelector('.btn-outline-light');
 
     function updateNavbar() {
+        if (window.scrollY > 0 || window.innerWidth < 1024) {
+            customNavbar.classList.remove('navbar-dark');
+            customNavbar.classList.add('navbar-light', 'bg-white', 'shadow-sm');
+
+            if (ctaNavbar) {
+                ctaNavbar.classList.remove('btn-outline-light');
+                ctaNavbar.classList.add('btn-outline-primary');
+            }
+        } else {
+            customNavbar.classList.remove('navbar-light', 'bg-white', 'shadow-sm');
+            customNavbar.classList.add('navbar-dark');
+
+            if (ctaNavbar) {
+                ctaNavbar.classList.remove('btn-outline-primary');
+                ctaNavbar.classList.add('btn-outline-light');
+            }
+        }
+
         const scrollPosition = window.pageYOffset + offset;
 
         sections.forEach(function (section) {
@@ -43,8 +63,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Initial update
+    function navPillsCustom() {
+        const foodTabButton = document.getElementById('tabMenusFood-tab');
+        const drinkTabButton = document.getElementById('tabMenusDrink-tab');
+
+        foodTabButton.addEventListener('click', function () {
+            foodTabButton.classList.remove('text-light');
+            foodTabButton.classList.add('active', 'bg-light', 'text-primary');
+            drinkTabButton.classList.remove('active', 'bg-light', 'text-primary');
+            drinkTabButton.classList.add('text-light');
+        });
+
+        drinkTabButton.addEventListener('click', function () {
+            drinkTabButton.classList.remove('text-light');
+            drinkTabButton.classList.add('active', 'bg-light', 'text-primary');
+            foodTabButton.classList.remove('active', 'bg-light', 'text-primary');
+            foodTabButton.classList.add('text-light');
+        });
+    }
+
+    // Initial
     updateNavbar();
+    navPillsCustom();
 });
 
 // Dataset
@@ -305,3 +345,28 @@ window.addEventListener('resize', checkScreenWidth);
 // Mendapatkan Tahun
 var currentYear = new Date().getFullYear();
 document.getElementById('currentYear').textContent = currentYear;
+
+// Scroll to top & Handler scroll
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function handleScroll() {
+    const btnScrollToTop = document.getElementById('btnScrollToTop');
+    if (window.scrollY > 20) {
+        btnScrollToTop.classList.remove('d-none');
+    } else {
+        btnScrollToTop.classList.add('d-none');
+    }
+}
+
+function initializeScrollToTop() {
+    const btnScrollToTop = document.getElementById('btnScrollToTop');
+    btnScrollToTop.addEventListener('click', scrollToTop);
+    window.addEventListener('scroll', handleScroll);
+}
+
+initializeScrollToTop();
