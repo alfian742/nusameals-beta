@@ -63,6 +63,10 @@ body {
   #customBottomNavbar {
     display: none !important;
   }
+
+  .brand-mobile-screen {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1024px) {
