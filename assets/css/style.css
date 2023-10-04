@@ -93,6 +93,13 @@ body {
 }
 
 @media (max-width: 768px) {
+  #heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   .hero-img {
     width: 210px;
     height: 240px;
