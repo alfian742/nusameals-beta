@@ -39,6 +39,11 @@ body {
   height: 100%;
 }
 
+.brand-mobile {
+  height: 48px;
+  width: 100%;
+}
+
 .custom-carousel-icon {
   height: 40px;
   width: 40px;
@@ -48,6 +53,21 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+.fs-custom {
+  font-size: 12px;
+}
+
+.py-custom {
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+}
+
+@media (min-width: 1025px) {
+  #customBottomNavbar {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -61,6 +81,14 @@ body {
     background-size: cover;
     background-position: center;
     z-index: -1;
+  }
+
+  #customNavbar {
+    display: none !important;
+  }
+
+  #btnScrollToTop {
+    display: none !important;
   }
 }
 

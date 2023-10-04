@@ -70,6 +70,54 @@
     </nav>
     <!-- End of navbar -->
 
+    <!-- Bottom navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-bottom rounded-top-5" id="customBottomNavbar">
+        <div class="container">
+            <ul class="navbar-nav d-flex flex-row gap-5 mx-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link fw-medium active" href="#heroSection">
+                        <i class="fa-solid fa-home"></i>
+                        <br>
+                        <span class="fs-custom">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium" href="#serviceSection">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <br>
+                        <span class="fs-custom">Service</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium" href="#menuSection">
+                        <i class="fa-solid fa-utensils"></i>
+                        <br>
+                        <span class="fs-custom">Menu</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium" href="#contactSection">
+                        <i class="fa-solid fa-user"></i>
+                        <br>
+                        <span class="fs-custom">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of bottom navbar -->
+
+    <!-- Brand mobile screen-->
+    <div class="d-lg-none d-xl-none">
+        <div
+            class="brand-mobile fw-semibold text-dark bg-white shadow-sm d-flex justify-content-center align-items-center gap-2">
+            <img src="assets/img/other/nusameals.png" alt="NusaMeals" width="28" height="28"
+                class="d-inline-block align-text-top rounded-1">
+            NusaMeals
+        </div>
+    </div>
+    <!-- End of brand mobile screen -->
+
     <!-- Hero Section -->
     <section id="heroSection">
         <div class="hero-background"></div>
@@ -681,16 +729,24 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="px-4 pt-3 text-center fw-medium d-lg-none d-xl-none">
+                        &copy; <span id="currentYearMobile"></span> NusaMeals. All rights reserved.
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Divider mobile screen -->
+        <div class="py-custom border-top border-light d-lg-none d-xl-none">
         </div>
     </section>
     <!-- End contact section -->
 
     <!-- Footer -->
-    <footer class="bg-primary text-light" id="footer">
+    <footer class="bg-primary text-light d-none d-lg-block">
         <div class="container px-4 py-3 border-top border-light text-center fw-medium">
-            &copy; <span id="currentYear"></span> NusaMeals. All rights reserved.
+            &copy; <span id="currentYearDesktop"></span> NusaMeals. All rights reserved.
         </div>
     </footer>
     <!-- End footer -->

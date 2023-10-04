@@ -2,8 +2,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const customNavbar = document.querySelector('#customNavbar');
     const navbarLinks = document.querySelectorAll('#customNavbar .nav-link');
+    const bottomNavbarLinks = document.querySelectorAll('#customBottomNavbar .nav-link');
     const sections = document.querySelectorAll('section');
     const offset = 84;
+    const bottomOffset = 48;
     const ctaNavbar = document.querySelector('.btn-outline-light');
 
     function updateNavbar() {
@@ -63,6 +65,45 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    function updateBottomNavbar() {
+        const scrollPosition = window.pageYOffset + bottomOffset;
+
+        sections.forEach(function (section) {
+            const sectionId = section.getAttribute('id');
+            const navLink = document.querySelector(`.navbar-nav .nav-link[href="#${sectionId}"]`);
+
+            const isSectionActive = section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition;
+
+            navLink.classList.toggle('active', isSectionActive);
+        });
+    }
+
+    window.addEventListener('scroll', updateBottomNavbar);
+    window.addEventListener('resize', updateBottomNavbar);
+
+    bottomNavbarLinks.forEach(function (link) {
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetOffset = targetSection.offsetTop - bottomOffset;
+
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+
+                bottomNavbarLinks.forEach(function (navLink) {
+                    navLink.classList.remove('active');
+                });
+
+                link.classList.add('active');
+            });
+        }
+    });
+
     function navPillsCustom() {
         const foodTabButton = document.getElementById('tabMenusFood-tab');
         const drinkTabButton = document.getElementById('tabMenusDrink-tab');
@@ -84,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial
     updateNavbar();
+    updateBottomNavbar();
     navPillsCustom();
 });
 
@@ -344,7 +386,8 @@ window.addEventListener('resize', checkScreenWidth);
 
 // Mendapatkan Tahun
 var currentYear = new Date().getFullYear();
-document.getElementById('currentYear').textContent = currentYear;
+document.getElementById('currentYearDesktop').textContent = currentYear;
+document.getElementById('currentYearMobile').textContent = currentYear;
 
 // Scroll to top & Handler scroll
 function scrollToTop() {
