@@ -97,7 +97,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-image: url("../img/other/bg-hero-secction-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    z-index: -999;
   }
 
   .hero-img {
