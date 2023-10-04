@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const bottomNavbarLinks = document.querySelectorAll('#customBottomNavbar .nav-link');
     const sections = document.querySelectorAll('section');
     const offset = 84;
-    const bottomOffset = 56;
+    const bottomOffset = 48;
     const ctaNavbar = document.querySelector('.btn-outline-light');
 
     function updateNavbar() {
