@@ -54,6 +54,11 @@ body {
   font-size: 12px;
 }
 
+.py-custom {
+  padding-top: 2.45rem;
+  padding-bottom: 2.45rem;
+}
+
 @media (min-width: 1025px) {
   #customBottomNavbar {
     display: none !important;
