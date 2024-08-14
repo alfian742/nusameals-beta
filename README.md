@@ -13,7 +13,7 @@ NusaMeals is a visually stunning landing page that offers a modern and engaging 
 
 ## Preview
 
-You can check out the live demo of NusaMeals here: [NusaMeals Demo](https://alfian742.github.io/nusameals-beta/)
+You can check out the live demo of NusaMeals here: [NusaMeals Beta Version Demo](https://alfian742.github.io/nusameals-beta/)
 
 ## Getting Started
 
